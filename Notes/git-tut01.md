@@ -1,7 +1,7 @@
 # GIT - Intro
 
 * Git is a Version Control System (VCS)
-* VCS is software designed to record changes made to the vile over time.
+* VCS is software designed to record changes made to the file or folder over time.
 * It also record images, research paper etc.
 
 ## Type of VCS
@@ -30,11 +30,11 @@ It means that you marked a modified file in its current version to go into your 
 
 ### Commit
 
-It means taht data is safely stored in your local database.
+It means thatt data is safely stored in your local database.
 
 ## GIT Configuaration
 
-### Git has multilever of configurations
+### Git has multilevel of configurations
 
 * Repository/Project Level (local)
 * User Account (Global level)

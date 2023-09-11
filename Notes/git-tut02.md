@@ -6,7 +6,7 @@
 * Values is nothing but the contents of file.
 * Git calculates the hashes with SHA1 algorithm.
 * SHA-1 (Secure Hash Algorithm 1) is a cryptographic hash function that produces a fixed-size 160-bit (20-byte) hash value.
-* SHA1 is  20 bytes in h exadecimal format.
+* SHA1 is  20 bytes in hexadecimal format.
 * Not only content the files, directories and so on commits has their own SHA-1
 * Every object has its own SHA1
 

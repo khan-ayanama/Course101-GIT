@@ -5,7 +5,7 @@
 * The stash's meaning is "store somethng safely in hidden place". The sense is Git is also the same for stash, Git temporarily saves your data safely without commiting.
 
 ```git
-    <!-- stashrd the mofied fiels and creates new stash -->
+    <!-- stash the modified fiels and creates new stash -->
     git stash
 
     <!-- If you want to give the name for particular stash -->

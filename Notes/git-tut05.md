@@ -1,7 +1,7 @@
 # GIT Rebase
 
 * Rebase is often used as an alternative to merging.
-* Rebasing a branch updates one branch with another b applying the commits of one brach on top of the commits of  another branh.
+* Rebasing a branch updates one branch with another by applying the commits of one brach on top of the commits of  another branch.
 * Git Rebase is used to clean up our local commit history
 * Rebase is an advance command which is used rarely
 * Rebase doens't preserve history
