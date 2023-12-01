@@ -1,6 +1,6 @@
 # GIT Merge
 
-Go to the target folde in which branch you want to commit and then merge the branch you want to merge.
+Go to the target folder in which branch you want to commit and then merge the branch you want to merge.
 
 * If there has been a changes in different files then there will be no problem while merging.
 * If there has been a changes in same file in different files then conflicts should be resolve.

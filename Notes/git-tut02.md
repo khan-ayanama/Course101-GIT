@@ -24,6 +24,33 @@
 
 ## Restore file
 
+* To only unstage a certain file and thereby undo a previous git add, you need to provide the --staged flag:
+
+```git
+    git restore --staged index.html
+```
+
+* You can of course also remove multiple files at once from the Staging Area:
+
+```git
+    git restore --staged *.css
+```
+
+* If you want to discard uncommitted local changes in a file, simply omit the --staged flag. Keep in mind, however, that you cannot undo this!
+
+```git
+    git restore index.html
+```
+
+Another interesting use case is to restore a specific historic revision of a file:
+
+```git
+    git restore --source 7173808e index.html
+    git restore --source master~2 index.html
+```
+
+The first example will restore the file as it was in commit #7173808e, while the second one will restore it as it was "two commits before the current tip of the master branch".
+
 ```git
     <!-- To restore from staged area to working area -->
     git restore --staged file.txt
