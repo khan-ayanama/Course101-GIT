@@ -43,7 +43,7 @@ It means thatt data is safely stored in your local database.
 The command to add the username and email address is  
 
 ```cmd
-    git cofig
+    git config
 ```
 
 ### Git Configuration commands

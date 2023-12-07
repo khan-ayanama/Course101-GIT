@@ -2,7 +2,7 @@
 
 When we initialize the git repository it automatically creates master branch.
 
-* Information about all the branhces in refs folderr>heads  of .git folder
+* Information about all the branches in refs folderr>heads  of .git folder
 
 ```git
     <!-- To see all the branches -->
