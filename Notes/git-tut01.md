@@ -1,8 +1,8 @@
 # GIT - Intro
 
-* Git is a Version Control System (VCS)
-* VCS is software designed to record changes made to the file or folder over time.
-* It also record images, research paper etc.
+- Git is a Version Control System (VCS)
+- VCS is software designed to record changes made to the file or folder over time.
+- It also record images, research paper etc.
 
 ## Type of VCS
 
@@ -22,7 +22,7 @@ It allows multiple developers to work on the same project without needing a cent
 
 ### Modified (Working Area)
 
-It means you have changed the file but have not  commited to your database yet.
+It means you have changed the file but have not commited to your database yet.
 
 ### Staged
 
@@ -36,11 +36,11 @@ It means thatt data is safely stored in your local database.
 
 ### Git has multilevel of configurations
 
-* Repository/Project Level (local)
-* User Account (Global level)
-* System Level (git installation)
+- Repository/Project Level (local)
+- User Account (Global level)
+- System Level (git installation)
 
-The command to add the username and email address is  
+The command to add the username and email address is
 
 ```cmd
     git config
@@ -50,33 +50,33 @@ The command to add the username and email address is
 
 1. Initialize git repository
 
-    ```git
-        git init
-    ```
+   ```git
+       git init
+   ```
 
 2. To see hidden files and folder
 
-    ```git
-        ls -a
-    ```
+   ```git
+       ls -a
+   ```
 
 3. To configure email locally
 
-    ```git
-        git config --local user.email newmail@gmail.com
-    ```
+   ```git
+       git config --local user.email newmail@gmail.com
+   ```
 
 4. To unset the field
 
-    ```git
-        git config --unset user.email
-    ```
+   ```git
+       git config --unset user.email
+   ```
 
 5. To remove section
 
-    ```git
-        git config --local --remove-section user
-    ```
+   ```git
+       git config --local --remove-section user
+   ```
 
 ## git help
 
@@ -128,18 +128,18 @@ It gives the difference between the changes made in file
 
 1. Difference between working area and staging area
 
-    ```git
-        git diff
-    ```
+   ```git
+       git diff
+   ```
 
 2. Difference between staging area and repo area
 
-    ```git
-        git diff --staged
-    ```
+   ```git
+       git diff --staged
+   ```
 
-3. Difference between working area and repo area
+3. Difference between (working || Staging) area && repo area
 
-    ```git
-        git diff head
-    ```
+   ```git
+       git diff head
+   ```
