@@ -1,22 +1,27 @@
-# GIT - Intro
+# Introduction
 
-- Git is a Version Control System (VCS)
-- VCS is software designed to record changes made to the file or folder over time.
-- It also record images, research paper etc.
+## Version Control System
 
-## Type of VCS
+It is a system that keep the record of changes in files or directory so that it preserves history of the project so whenever you need to know what was the file actually look like at particular point of time.
+There are bunch of softwares available to help and make it easy to handle files or projects.
 
-### Local Version Control System
+## Local Version Control System
 
-It primarily focuses on tracking changes and providing version history within a single machine.
+A system is used to manage file or it's history locally in your computer you can either calculate manually by creating different folder or there are softwares which can help for eg: RCS (Revision Control System)
+RCS keeps history only of files by keeping track of modifications.
 
-### Centralized Version control System
+## Central Version Control System
 
-The central server acts as a single source of truth, where all changes are stored and accessed by team members.
+It is a system where all the versioned files put on the central server and bunch of developer can access from it, and developers work on the files whichever they needed.
+It has downside of corrupted data or low time of server.
 
-### Distributed Version Control System
+## Distributed Version Control System
 
-It allows multiple developers to work on the same project without needing a central server or a single point of control. Instead, each developer has their own complete copy of the project, including its entire history of changes.
+It is a system where developers clone the whole repository or file into their system and work on it, if server looses data or get corrupted repository can be copied from any developrs machine.
+
+## GIT
+
+Git stores the reference of snapshot of complete project rather than changes.
 
 ## Three States in GIT
 
@@ -30,9 +35,11 @@ It means that you marked a modified file in its current version to go into your 
 
 ### Commit
 
-It means thatt data is safely stored in your local database.
+It means that data is safely stored in your local database.
 
 ## GIT Configuaration
+
+Git configuration is for when you commit it identifies you.
 
 ### Git has multilevel of configurations
 
@@ -42,8 +49,25 @@ It means thatt data is safely stored in your local database.
 
 The command to add the username and email address is
 
-```cmd
-    git config
+Git config commands:
+
+```bash
+    # It shows the settings and where they are comming from
+    git config --list --show-origin
+
+    # Adding username and email
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
+
+    # Your editor
+    $ git config --global core.editor emacs
+
+    # Default branch name
+    git config --global init.defaultBranch main
+
+    # Getting HElP
+    git help <verb>
+
 ```
 
 ### Git Configuration commands
@@ -87,9 +111,22 @@ The command to add the username and email address is
     git help all
 ```
 
-## git status
+## Initializing a repository
+
+```git
+    git init
+```
+
+## Status of files
 
 Gives info about branch and the file position
+
+```bash
+    git status
+
+    # Short status
+    git status -s
+```
 
 ## git add
 
@@ -102,6 +139,28 @@ To add file in staging area
     <!-- This will add all the files -->
     git add .
     git add -A
+```
+
+## .gitignore
+
+```bash
+# ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
 ```
 
 ## git commit
