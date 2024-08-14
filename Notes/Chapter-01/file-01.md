@@ -66,7 +66,7 @@ Git config commands:
     git config --global init.defaultBranch main
 
     # Getting HElP
-    git help <verb>
+    git help < verb >
 
 ```
 

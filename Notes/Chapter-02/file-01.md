@@ -27,9 +27,26 @@ Untracked means git will see files which are present but not present at the time
     git status -s
 ```
 
+## Short Status
+
+`git status -s || git status --short` for short form of status of repo
+
+When you run short status command you get some type of letter code:-
+`M`: Modified files
+`MM`: The presence of two M characters signifies staged and unstaged modifications.
+`A`: File added to staging area.
+`??`: File is not tracked.
+
 ## Ignoring files
 
+- Blank lines or line starting with # are ignored
+- Added files will be checked recursively
+- To avoid recursion use forward slash(/)
+
 ```txt
+    # Ignoring file ending with .o or .a
+    *.[oa]
+
     # ignore all .a files
     *.a
 
@@ -94,6 +111,7 @@ It gives the difference between the changes made in file
 ```
 
 - When you want to commit but without staging
+  NOTE: It will not commit newly created file but the files which are already tracked.
 
 ```bash
     git commit -a -m "commit message without staging"
