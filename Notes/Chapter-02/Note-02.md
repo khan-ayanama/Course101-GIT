@@ -1,4 +1,4 @@
-## Viewing Commit history
+# Viewing Commit history
 
 `git log`: It list the commits in reverse chronological order.
 `git log --patch -2`: this show the difference between changes introduced in each commit in last 2 commits.
